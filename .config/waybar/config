@@ -6,7 +6,7 @@
     "margin-top": 0,
     "margin-bottom": 0,
     
-    "modules-left": ["custom/start", "custom/chromium", "custom/files", "custom/terminal"],
+    "modules-left": ["custom/start", "custom/chromium", "custom/files", "custom/terminal", "custom/vm"],
     "modules-center": ["wlr/taskbar"],
     "modules-right": ["tray", "network", "pulseaudio", "clock"],
     
@@ -32,6 +32,12 @@
         "format": "󰆍",
         "tooltip": "Terminal",
         "on-click": "kitty"
+    },
+
+    "custom/vm": {
+        "format": "󰆧",
+        "tooltip": "Virtual Machine",
+        "on-click": "virt-manager"
     },
 
     "wlr/taskbar": {

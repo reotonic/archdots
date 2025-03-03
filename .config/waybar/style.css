@@ -13,7 +13,7 @@ window#waybar {
 }
 
 #custom-start {
-    font-size: 25px;
+    font-size: 24px;
     color: #ffffff;
     margin-left: 11px;
     margin-right: 9px;
@@ -22,6 +22,7 @@ window#waybar {
 /* Custom app launcher icons */
 #custom-chromium,
 #custom-files,
+#custom-vm,
 #custom-terminal {
     font-size: 23px;
     color: #ffffff;
@@ -31,6 +32,7 @@ window#waybar {
 
 #custom-chromium:hover,
 #custom-files:hover,
+#custom-vm:hover,
 #custom-terminal:hover {
     background: rgba(255, 255, 255, 0.1);
 }
@@ -79,9 +81,13 @@ window#waybar {
     color: #ffffff;
 }
 
-#network,
+#network {
+    padding: 0px;
+    padding-left: 10px;
+}
 #pulseaudio {
     padding: 0px;
+    padding-right: 10px;
 }
 
 #clock {
