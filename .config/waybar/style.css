@@ -23,6 +23,7 @@ window#waybar {
 #custom-chromium,
 #custom-files,
 #custom-vm,
+#custom-photo,
 #custom-terminal {
     font-size: 23px;
     color: #ffffff;
@@ -32,6 +33,7 @@ window#waybar {
 
 #custom-chromium:hover,
 #custom-files:hover,
+#custom-photo:hover,
 #custom-vm:hover,
 #custom-terminal:hover {
     background: rgba(255, 255, 255, 0.1);
