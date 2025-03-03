@@ -23,7 +23,7 @@ element-icon, element-text, scrollbar {
 }
 
 window {
-  location : south east;
+  location : south west;
   width    : 300px;
   height   : 600px;
   y-offset : -8px;
@@ -70,7 +70,7 @@ textbox {
 }
 
 listview {
-  columns       : 2;
+  columns       : 1;
   spacing       : 8px;
   fixed-height  : true;
   fixed-columns : true;
@@ -80,22 +80,33 @@ element {
   spacing       : 1em;
   padding       : 8px;
   border-radius : 2px;
+  text-color: @fg0;
 }
 
 element normal urgent {
-  text-color: @urgent;
+  text-color: @fg0;
+}
+
+element normal.normal {
+	background-color: transparent;
+  text-color: @fg0;
+}
+
+element alternate.normal {
+	background-color: transparent;
+  text-color: @fg0;
 }
 
 element normal active {
-  text-color: @accent;
+  text-color: @fg0;
 }
 
 element alternate active {
-  text-color: @accent;
+  text-color: @fg0;
 }
 
 element selected active {
-  text-color: @accent;
+  text-color: @fg0;
 }
 
 element selected {
@@ -107,7 +118,7 @@ element selected urgent {
 }
 
 element-icon {
-  size: 1.3em;
+  size: 1.5em;
 }
 
 element-text {
