@@ -6,7 +6,7 @@
     "margin-top": 0,
     "margin-bottom": 0,
     
-    "modules-left": ["custom/start", "custom/chromium", "custom/files", "custom/terminal", "custom/vm"],
+    "modules-left": ["custom/start", "custom/chromium", "custom/files", "custom/terminal", "custom/vm", "custom/photo"],
     "modules-center": ["wlr/taskbar"],
     "modules-right": ["tray", "network", "pulseaudio", "clock"],
     
@@ -38,6 +38,12 @@
         "format": "󰆧",
         "tooltip": "Virtual Machine",
         "on-click": "virt-manager"
+    },
+
+    "custom/photo": {
+        "format": "",
+        "tooltip": "Photopea",
+        "on-click": "chromium --app-id="
     },
 
     "wlr/taskbar": {
