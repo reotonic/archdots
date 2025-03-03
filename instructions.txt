@@ -1,7 +1,7 @@
 $nvidia = nvidia-open libva-nvidia-driver
 $security = sbctl apparmor plymouth
 $fonts = noto-fonts noto-fonts-emoji noto-fonts-cjk ttf-liberation ttf-dejavu ttf-roboto ttf-ubuntu-font-family
-$wm = hyprland uwsm kitty dunst pipewire wireplumber xdg-desktop-portal-hyprland polkit-gnome qt6-wayland qt5-wayland waybar rofi-wayland
-$userspace = nautilus chromium flatpak gnome-software
+$wm = hyprland uwsm kitty dunst pipewire wireplumber xdg-desktop-portal-hyprland polkit-gnome qt6-wayland qt5-wayland waybar rofi-wayland pavucontrol
+$userspace = nautilus chromium flatpak gnome-software vscode
 
 sudo pacman -S $nvidia $security $fonts $wm $userspace
