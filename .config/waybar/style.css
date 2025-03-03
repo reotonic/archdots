@@ -23,7 +23,7 @@ window#waybar {
 #custom-chromium,
 #custom-files,
 #custom-terminal {
-    font-size: 18px;
+    font-size: 23px;
     color: #ffffff;
     padding: 0 8px;
     margin: 0 2px;
@@ -79,22 +79,14 @@ window#waybar {
     color: #ffffff;
 }
 
+#network,
+#pulseaudio {
+    padding: 0px;
+}
+
 #clock {
     font-weight: bold;
     margin-right: 8px;
-}
-
-#battery.charging, #battery.plugged {
-    color: #26A65B;
-}
-
-#battery.critical:not(.charging) {
-    color: #f53c3c;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 #network.disconnected {
