@@ -1,0 +1,107 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 40,
+    "spacing": 4,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    
+    "modules-left": ["custom/start", "custom/chromium", "custom/files", "custom/terminal"],
+    "modules-center": ["wlr/taskbar"],
+    "modules-right": ["tray", "network", "pulseaudio", "clock"],
+    
+    "custom/start": {
+        "format": "󰣇",
+        "tooltip": false,
+        "on-click": "pkill -x rofi || rofi -show drun -show-icons"
+    },
+    
+    "custom/chromium": {
+        "format": "󰊯",
+        "tooltip": "Chromium",
+        "on-click": "chromium"
+    },
+    
+    "custom/files": {
+        "format": "󰉋",
+        "tooltip": "Files",
+        "on-click": "nautilus"
+    },
+    
+    "custom/terminal": {
+        "format": "󰆍",
+        "tooltip": "Terminal",
+        "on-click": "kitty"
+    },
+
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 24,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "on-click-right": "minimize",
+        "all-outputs": true,
+        "active-first": false,
+        "sort-by-app-id": true,
+        "ignore-list": [
+            "Alacritty"
+        ],
+        "app_ids-mapping": {
+            "firefoxdeveloperedition": "firefox-developer-edition"
+        },
+        "icon-theme": "Win11-dark",
+        "window-icon-size": 24,
+        "window-icon-theme": "Win11-dark",
+        "show-all": true
+    },
+    
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%a, %b %d, %Y}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode"          : "year",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "right",
+            "on-scroll"     : 1,
+            "on-click-right": "mode",
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        }
+    },
+    
+    "network": {
+        "format-wifi": "󰖩",
+        "format-ethernet": "󰈀",
+        "format-linked": "󰈀",
+        "format-disconnected": "󰖪",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}"
+    },
+    
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "󰖁",
+        "format-icons": {
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
+            "phone": "󰏲",
+            "portable": "󰏲",
+            "car": "󰄋",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "pavucontrol"
+    }
+}
