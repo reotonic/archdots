@@ -13,27 +13,40 @@ window#waybar {
 }
 
 #custom-start {
-    font-size: 24px;
+    font-size: 23px;
     color: #ffffff;
-    margin-left: 11px;
+    margin-left: 15px;
     margin-right: 9px;
+    padding-top: 1px;
 }
 
 /* Custom app launcher icons */
 #custom-chromium,
 #custom-files,
 #custom-vm,
+#custom-steam,
+#custom-code,
+#custom-discord,
 #custom-photo,
 #custom-terminal {
-    font-size: 23px;
+    font-size: 22px;
     color: #ffffff;
     padding: 0 8px;
     margin: 0 2px;
+    padding-top: 2px;
+}
+
+#custom-discord {
+    font-size: 20px;
+    padding-top: 4px;
 }
 
 #custom-chromium:hover,
 #custom-files:hover,
 #custom-photo:hover,
+#custom-code:hover,
+#custom-discord:hover,
+#custom-steam:hover,
 #custom-vm:hover,
 #custom-terminal:hover {
     background: rgba(255, 255, 255, 0.1);
@@ -90,6 +103,7 @@ window#waybar {
 #pulseaudio {
     padding: 0px;
     padding-right: 10px;
+    font-size: 17px;
 }
 
 #clock {

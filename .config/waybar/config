@@ -6,7 +6,7 @@
     "margin-top": 0,
     "margin-bottom": 0,
     
-    "modules-left": ["custom/start", "custom/chromium", "custom/files", "custom/terminal", "custom/vm", "custom/photo"],
+    "modules-left": ["custom/start", "custom/chromium", "custom/files", "custom/terminal", "custom/code", "custom/vm", "custom/photo", "custom/discord", "custom/steam"],
     "modules-center": ["wlr/taskbar"],
     "modules-right": ["tray", "network", "pulseaudio", "clock"],
     
@@ -34,6 +34,12 @@
         "on-click": "kitty"
     },
 
+    "custom/code": {
+        "format": "󰨞",
+        "tooltip": "VSCode",
+        "on-click": "code"
+    },
+
     "custom/vm": {
         "format": "󰆧",
         "tooltip": "Virtual Machine",
@@ -43,7 +49,19 @@
     "custom/photo": {
         "format": "",
         "tooltip": "Photopea",
-        "on-click": "chromium --app-id="
+        "on-click": "chromium --app-id=jdklklfpinionkgpmghaghehojplfjio"
+    },
+
+    "custom/discord": {
+        "format": "󰙯",
+        "tooltip": "Discord",
+        "on-click": "flatpak run dev.vencord.Vesktop"
+    },
+
+    "custom/steam": {
+        "format": "󰓓",
+        "tooltip": "Steam",
+        "on-click": "steam"
     },
 
     "wlr/taskbar": {
@@ -106,12 +124,6 @@
         "format": "{icon}",
         "format-muted": "󰖁",
         "format-icons": {
-            "headphone": "󰋋",
-            "hands-free": "󰋎",
-            "headset": "󰋎",
-            "phone": "󰏲",
-            "portable": "󰏲",
-            "car": "󰄋",
             "default": ["󰕿", "󰖀", "󰕾"]
         },
         "on-click": "pavucontrol"
